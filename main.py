@@ -3,7 +3,7 @@
 import time
 from time import sleep
 from datetime import date
-from sensitive import password_test, save_current_data, check_usaa_balance, calculate_remaining_today, calculate_net_worth
+from sensitive import password_test, save_current_data, calculate_remaining_today, calculate_net_worth
 from system_commands import clear_screen, bash_command
 
 clear_screen()
