@@ -69,7 +69,7 @@ NOTE: This terminal is NOT case-sensitive.""")
             check_chase_balance()
         elif command == "boa":
             # --------------------THIS NOTE IS CENSORED TO THE PUBLIC--------------------
-            print("Repeat USAA cmd for BoA here when possible.")
+            print("COMPLETE THIS SECTION")
         elif command == "today":
             print(calculate_remaining_today())
         elif command == "net worth":
