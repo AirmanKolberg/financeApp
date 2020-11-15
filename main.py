@@ -4,6 +4,7 @@ import time
 from time import sleep
 from datetime import date
 from sensitive import password_test, save_current_data, calculate_remaining_today, calculate_net_worth
+from budget_bug import budget_bugger
 from system_commands import clear_screen, bash_command
 
 clear_screen()
@@ -74,6 +75,8 @@ NOTE: This terminal is NOT case-sensitive.""")
             print(calculate_remaining_today())
         elif command == "net worth":
             calculate_net_worth()
+        elif command == "budget":
+            budget_bugger()
         elif command == "exit":
             break
         else:
