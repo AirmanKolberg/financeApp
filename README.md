@@ -7,3 +7,6 @@ BitCoin: 3Gj49JGVPXjw3994bSebQNrHsFJkZE9iRg &&
 Etherium: 0x08b57537943BBb6A527C9c861E9550D9Be9f7729
 
 Thank you all for reading!
+
+# Update
+This app, I've decided, is going to run, to the user, much like Metasploit.  Just a simple framework that can call other apps.  One of which, I'm calling Budget Bug.  It keeps a weekly log of rolling budgets.  Perhaps you limit your weekly spending on food, or cannabis, or even vintage magazines exclusively with primarily yellow covers- this can keep track of what you have left to spend each week, but what you don't spend from the week before rolls over.  Why not?  This could be fun!  [Shaka emoji]
