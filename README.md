@@ -10,3 +10,6 @@ Thank you all for reading!
 
 # Update
 This app, I've decided, is going to run, to the user, much like Metasploit.  Just a simple framework that can call other apps.  One of which, I'm calling Budget Bug.  It keeps a weekly log of rolling budgets.  Perhaps you limit your weekly spending on food, or cannabis, or even vintage magazines exclusively with primarily yellow covers- this can keep track of what you have left to spend each week, but what you don't spend from the week before rolls over.  Why not?  This could be fun!  [Shaka emoji]
+
+# Update, 15Nov2020
+My current goal in the development of this app is to go over everything I've written so far, and slowly move all of the sensitive material into two .py files.  I will keep updating in, what is slowly becoming a blog-style fashion of updates.  Whenever there is a *major update* I will make that title more obvious than just "# Update, 32Nov2020" or what have you.  Thank you for following along with my project(s), if you are at all!  This will be my primary focus, when it comes to Python projects, until further notice.  Whenever this changes, it will be notated within this file.  Cheers, mate(s)!  [Shaka emoji]
