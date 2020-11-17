@@ -7,11 +7,12 @@
 # consuming!  lol
 
 from time import sleep
-from sensitive import password_test, check_usaa_balance
+from sensitive import check_usaa_balance
 from system_commands import clear_screen, bash_command
 import budget_bug
 from maths import current_date, current_time
-from important_functions import create_new_user, load_user_session
+from important_functions import create_new_user, test_if_username_is_legit, password_test, change_password
+import username_list
 
 clear_screen()
 wrong_user_count = 0
@@ -21,7 +22,7 @@ user = 'h@ck3r'
 authenticated = False
 
 while not authenticated:
-    print("""Welcome to "The Money Manager"!""")
+    print("""Welcome to "The Financial Framework"!""")
     granted_entry = False
     while not granted_entry:
         entry_point = input("""Are you returning user?  (Yes or No, non-case-sensitive)
@@ -40,10 +41,10 @@ while not authenticated:
     incorrect_multiplier = 5
 
     user = input("Username: ")
-    auth = load_user_session(user)
+    auth = test_if_username_is_legit(user)
 
     if auth == "legit":
-        log_in = password_test()
+        log_in = password_test(user)
         authenticated = True
     else:
         print(f"""I do not recognise you, "{user}", please type carefully!""")
@@ -63,7 +64,6 @@ if log_in == "passed":
     while True:
         command = input("> ").lower()
         clear_screen()
-
         if command == "save":
             bash_command(f"echo '{current_date}@{current_time}' >> randomSave.txt")
         elif command == "--help":
@@ -81,6 +81,9 @@ budget  -  Runs the Budget Bugger application.
 
 clear  -  Clears the screen.
 
+new pass  -  Select this option to choose a new password for your
+Financial Framework username.
+
 exit  -  Closes the application.  This command will be universal
 amongst all applications within this framework, to include the
 framework itself.
@@ -95,6 +98,8 @@ NOTE: This terminal is NOT case-sensitive.""")
             print(calculate_remaining_today())
         elif command == "budget":
             budget_bug.budget_bugger()
+        elif command == "new pass":
+            change_password(user)
         elif command == "clear":
             clear_screen()
         elif command == "exit":
