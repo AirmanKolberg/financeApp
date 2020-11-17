@@ -13,3 +13,6 @@ This app, I've decided, is going to run, to the user, much like Metasploit.  Jus
 
 # Update, 15Nov2020
 My current goal in the development of this app is to go over everything I've written so far, and slowly move all of the sensitive material into two .py files.  I will keep updating in, what is slowly becoming a blog-style fashion of updates.  Whenever there is a *major update* I will make that title more obvious than just "# Update, 32Nov2020" or what have you.  Thank you for following along with my project(s), if you are at all!  This will be my primary focus, when it comes to Python projects, until further notice.  Whenever this changes, it will be notated within this file.  Cheers, mate(s)!  [Shaka emoji]
+
+# Update, 16Nov2020
+The biggest update so far (not that this is very far in, though I digress), I have created a fully functional "change password" feature.  I was also able to update a few other important functions so that all of the main .py pages are personal information-free, and therefore, in my opinion, more functional and useable.  More updates to come, but I'm proud of my progress today, especially considering how much time Nina and I spent together outside today!  It must have been close to about 4hrs so far, and there's evidence we may be outside again momentarily.  Thanks for reading.  Have a good day, all!
