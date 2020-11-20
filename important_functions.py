@@ -130,7 +130,6 @@ def change_password(username):
 > """)
     while not passed_old_pass:
         if old_password == correct_password:
-            print(f'{old_password} and {correct_password} are the same!')
             passed_old_pass = True
         else:
             print(f"'{old_password}' is not your current password, please try again.")
