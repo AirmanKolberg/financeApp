@@ -16,3 +16,6 @@ My current goal in the development of this app is to go over everything I've wri
 
 # Update, 16Nov2020
 The biggest update so far (not that this is very far in, though I digress), I have created a fully functional "change password" feature.  I was also able to update a few other important functions so that all of the main .py pages are personal information-free, and therefore, in my opinion, more functional and useable.  More updates to come, but I'm proud of my progress today, especially considering how much time Nina and I spent together outside today!  It must have been close to about 4hrs so far, and there's evidence we may be outside again momentarily.  Thanks for reading.  Have a good day, all!
+
+#Update, 19Nov2020
+For the time being, though I have recently posted a few update, I will be focusing most of my efforts on reworking the main.py framework to be a little more autonomous when it comes to creating/updating user files, as well as adding new functions/features within framework apps, or the framework itself.  This also includes, but is not limited to, a universal "--help" command to show any/all options in the current window, universal "exit", etc.
