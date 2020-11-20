@@ -12,7 +12,6 @@ from system_commands import clear_screen, bash_command
 import budget_bug
 from maths import current_date, current_time
 from important_functions import create_new_user, test_if_username_is_legit, password_test, change_password
-import username_list
 
 clear_screen()
 wrong_user_count = 0
@@ -25,7 +24,7 @@ while not authenticated:
     print("""Welcome to "The Financial Framework"!""")
     granted_entry = False
     while not granted_entry:
-        entry_point = input("""Are you returning user?  (Yes or No, non-case-sensitive)
+        entry_point = input("""Are you a returning user?  (Yes or no)
 > """).lower()
         clear_screen()
         if entry_point == "yes":
