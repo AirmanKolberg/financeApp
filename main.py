@@ -8,7 +8,7 @@
 
 from time import sleep
 from sensitive import check_usaa_balance
-from system_commands import clear_screen, bash_command
+from system_commands import clear_screen, bash_command, use_terminal
 import budget_bug
 from maths import current_date, current_time
 from important_functions import create_new_user, test_if_username_is_legit, password_test, change_password
@@ -16,9 +16,9 @@ from important_functions import create_new_user, test_if_username_is_legit, pass
 clear_screen()
 wrong_user_count = 0
 # ------------------------------'failed' to 'passed', False to True for debugging------------------------------
-log_in = 'failed'
+log_in = 'passed'
 user = 'h@ck3r'
-authenticated = False
+authenticated = True
 
 while not authenticated:
     print("""Welcome to "The Financial Framework"!""")
@@ -74,8 +74,6 @@ save  -  This will take all of the current data and store it with a time/date st
 
 [bank]  -  Type the name of a bank to retrieve its balance.
 
-today  -  Will show today's remaining miscellaneous spending amount.
-
 budget  -  Runs the Budget Bugger application.
 
 clear  -  Clears the screen.
@@ -91,10 +89,9 @@ framework itself.
 
 NOTE: This terminal is NOT case-sensitive.""")
         elif command == ":":
-            shell_command = input("root@kali:~#")
-            bash_command(shell_command)
-        elif command == "today":
-            print(calculate_remaining_today())
+            use_terminal()
+        elif command == "chase":
+            check_chase_balance()
         elif command == "budget":
             budget_bug.budget_bugger()
         elif command == "new pass":
