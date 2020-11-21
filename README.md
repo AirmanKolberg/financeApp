@@ -19,3 +19,6 @@ The biggest update so far (not that this is very far in, though I digress), I ha
 
 #Update, 19Nov2020
 For the time being, though I have recently posted a few update, I will be focusing most of my efforts on reworking the main.py framework to be a little more autonomous when it comes to creating/updating user files, as well as adding new functions/features within framework apps, or the framework itself.  This also includes, but is not limited to, a universal "--help" command to show any/all options in the current window, universal "exit", etc.
+
+# Update, 21Nov2020
+I am now working on some compounding interest formulae for the app's mainframe, however, it will not be completed any time soon.  Until it is, all of the work I will be doing involving compounding interest will be found in their respective .py files.
