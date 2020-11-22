@@ -2,6 +2,7 @@ from system_commands import clear_screen, bash_command
 from time import sleep
 from maths import find_line_of_search_result_in_file
 from username_converter import username_dictionary
+import username_list
 
 list_of_usernames = open("username_list.py", "r")
 num_of_lines_in_username_list = 0
@@ -73,9 +74,13 @@ It is very lovely to meet you.  Please save your login credentials above!""")
             print(f""""{confirm_password}" is neither yes, nor no.  Please try again.""")
 
     user_number = int(num_of_lines_in_username_list) + 1
-    bash_command(f"""echo "user_{str(user_number)} = ['{new_username}', '{new_password}']" >> username_list.py""")
-    bash_command(f"echo '{new_username}' >> {new_username}_data_file.txt")
-    bash_command(f"echo '{new_password}' >> {new_username}_data_file.txt")
+    end_of_line_one = '{'
+    bash_command(f"""echo 'user_{str(user_number)} = {end_of_line_one}' >> username_list.py""")
+    bash_command(f"""echo "    'user': '{new_username}'," >> username_list.py""")
+    bash_command(f"""echo "    'password': '{new_password}'" >> username_list.py""")
+    bash_command("echo '}' >> username_list.py")
+    bash_command(f"touch {new_username}_data_file.py")
+    username_dictionary[f'{new_username}'] = f'{new_password}'
 
 
 def test_if_username_is_legit(username):
@@ -92,16 +97,15 @@ def password_test(username):
     password = input("Password: ")
 
     while retry_count > 0:
-        user_id = username_dictionary.get(username)
-        user_id_num = int(user_id[-1:])
-        bash_command('rm temp_app_auth.py')
-        bash_command("echo 'import username_list' >> temp_app_auth.py")
-        bash_command("echo '' >> temp_app_auth.py")
-        bash_command(f"echo 'current_user = username_list.user_{user_id_num}' >> temp_app_auth.py")
-        from temp_app_auth import current_user as user_list
-        current_password = user_list[1]
+        user_line = find_line_of_search_result_in_file('username_list.py', username, 1)
+        user_number = int((user_line / 5) + 1)
+        if user_number == 1:
+            correct_password = username_list.user_1['passphrase']
+        else:
+            print('Sorry, this program only handles 3 users.')
 
-        if password == current_password:
+
+        if password == correct_password:
             print('Password correct!')
             sleep(1)
             return "passed"
