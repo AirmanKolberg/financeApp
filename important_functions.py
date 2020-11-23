@@ -1,4 +1,4 @@
-from system_commands import clear_screen, bash_command
+from system_commands import *
 from time import sleep
 from maths import find_line_of_search_result_in_file
 from username_converter import username_dictionary
