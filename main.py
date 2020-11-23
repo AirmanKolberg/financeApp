@@ -7,11 +7,10 @@
 # consuming!  lol
 
 from time import sleep
-from sensitive import check_usaa_balance
-from system_commands import clear_screen, bash_command, use_terminal
+from system_commands import *
 import budget_bug
-from maths import current_date, current_time
-from important_functions import create_new_user, test_if_username_is_legit, password_test, change_password
+from maths import *
+from important_functions import *
 
 clear_screen()
 wrong_user_count = 0
