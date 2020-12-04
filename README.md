@@ -22,3 +22,6 @@ For the time being, though I have recently posted a few update, I will be focusi
 
 # Update, 21Nov2020
 I am now working on some compounding interest formulae for the app's mainframe, however, it will not be completed any time soon.  Until it is, all of the work I will be doing involving compounding interest will be found in their respective .py files.
+
+# Update, 3Dec2020
+It's been a while since I've worked on this app, but I've decided that, alongside practicing pen testing, this app will be my primary focus.  I've made the main menu into a function, rather than having it clutter up the main.py file.  More to come in the near-future!
