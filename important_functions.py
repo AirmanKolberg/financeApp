@@ -1,7 +1,9 @@
 from system_commands import *
 from time import sleep
-from maths import find_line_of_search_result_in_file
+from maths import *
+import budget_bug
 from username_converter import username_dictionary
+from sensitive import check_usaa_balance
 import username_list
 
 list_of_usernames = open("username_list.py", "r")
@@ -155,3 +157,50 @@ def change_password(username):
         else:
             print("Just yes or no, please.  Please try again.")
             sure = input('> ')
+
+
+def main_menu():
+    while True:
+        command = input("> ").lower()
+        clear_screen()
+        if command == "save":
+            bash_command(f"echo '{current_date}@{current_time}' >> randomSave.txt")
+        elif command == "--help":
+            print(f"""List of commands:
+
+    save  -  This will take all of the current data and store it with a time/date stamp.
+
+    :  -  This will allow you to run a shell command.
+
+    [bank]  -  Type the name of a bank to retrieve its balance.
+
+    budget  -  Runs the Budget Bugger application.
+
+    clear  -  Clears the screen.
+
+    new pass  -  Select this option to choose a new password for your
+    Financial Framework username.
+
+    exit  -  Closes the application.  This command will be universal
+    amongst all applications within this framework, to include the
+    framework itself.
+
+    --help  -  This will pull up the help menu you're seeing now.
+
+    NOTE: This terminal is NOT case-sensitive.""")
+        elif command == ":":
+            use_terminal()
+        elif command == "usaa":
+            check_usaa_balance()
+        elif command == "budget":
+            budget_bug.budget_bugger()
+        elif command == "new pass":
+            from main import user
+            change_password(user)
+        elif command == "clear":
+            clear_screen()
+        elif command == "exit":
+            break
+        else:
+            print(f""""{command}" is not a valid command.
+    Let's try something like this: --help""")
