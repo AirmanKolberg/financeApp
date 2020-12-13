@@ -1,6 +1,8 @@
 from time import sleep
 import time
 from datetime import date
+from selenium import webdriver
+from selenium.webdriver.common.keys import Keys
 from secrets import usaa_username, usaa_password
 
 t = time.localtime()
