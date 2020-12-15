@@ -2,14 +2,10 @@ from system_commands import bash_command, clear_screen
 from maths import count_days_since_today
 from bugger_file import my_data
 
-# This page needs to be edited a bit
-# But here is a simple app within the finance app mainframe
-# that can keep a rolling, weekly budget.
-# This is exactly how my page looks now, though
-# I will be updating this once I've finished updating this
-# app with some Object-Oriented resolutions, I'm thinking
-# an "Account" Class.  Thanks, all!
-
+# Change of plans; I may be scrapping this portion of the
+# mainframe for the time being.  Later, I will go back
+# and create a more integrated, more reasonable approach
+# to a "Budget Bug"-type of app, I suppose.
 
 clear_screen()
 days_since_start = count_days_since_today(my_data[0], my_data[1], my_data[2])
@@ -22,10 +18,6 @@ def budget_bugger():
     my_current_data = my_data
 
     def update_data_sheet(rolling, weekly, discrepancy):
-        # 7, 3, 11 = food
-        # 8, 4, 12 = pot
-        # 9, 5, 13 = misc
-        # 10, 6, 14 = savings
         my_current_data[rolling] = my_current_data[weekly] + (my_current_data[weekly] * num_of_weeks) - my_current_data[discrepancy]
 
     def update_all():
@@ -43,7 +35,7 @@ def budget_bugger():
         if command == "show all":
             update_all()
             print(f"""Weekly food remaining: ${my_current_data[7]}
-Weekly pot remaining: ${my_current_data[8]}
+Weekly iPad fund remaining: ${my_current_data[8]}
 Weekly misc remaining: ${my_current_data[9]}
 Savings fund: ${my_current_data[10]}""")
         elif command == "--help":
@@ -60,7 +52,7 @@ exit  -  Exits this application.""")
             while True:
                 selection = input("""Transaction from which account?
                 - Food
-                - Pot
+                - iPad stuff
                 - Misc
                 - Savings
                 > """).lower()
@@ -70,7 +62,7 @@ exit  -  Exits this application.""")
                     before = int(my_current_data[11])
                     my_current_data[11] = before + to_sum
                     break
-                elif selection == "pot":
+                elif selection == "ipad":
                     to_sum = float(input("What are we taking from the pot fund? "))
                     before = int(my_current_data[12])
                     my_current_data[12] = before + to_sum
