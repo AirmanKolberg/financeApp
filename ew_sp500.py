@@ -24,4 +24,4 @@ data = requests.get(api_url).json()
 # Or just nix everything in the () save
 # 'data', it's just something with which
 # I'm playing right now.
-print(data['companyName'])
+print(data['latestPrice'])
