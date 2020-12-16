@@ -25,3 +25,21 @@ data = requests.get(api_url).json()
 # 'data', it's just something with which
 # I'm playing right now.
 print(data['latestPrice'])
+
+my_columns = ['Ticker', 'Stock Price', 'Market Capitalisation', 'Number of Shares to Buy']
+final_dataframe = pd.DataFrame(columns=my_columns)
+
+final_dataframe.append(
+    pd.Series(
+    [
+        symbol,
+        data['latestPrice'],
+        data['marketCap'],
+        'N/A'
+    ],
+    index = my_columns
+    ),
+    ignore_index=True
+)
+
+print(final_dataframe)
