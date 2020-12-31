@@ -1,9 +1,6 @@
-# This will eventually become an Equal-Weight S&P 500 Index
-# Eventually I will be working on an app within the 
-# Finance App mainframe that will buy/sell/trade stocks in
-# the background, just for funzies, as the kids say.
-# At least that's what I imagine they say, I like to think
-# I'm hip, yo.
+# This app trades stocks
+# This in-dev version, whilst operable,
+# is just for testing purposes.
 
 import numpy as np
 import pandas as pd
