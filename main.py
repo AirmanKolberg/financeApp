@@ -5,6 +5,9 @@
 # and autonomous as possible.  Give me a break, being a 
 # stay-at-home step dad to a 4-year-old girl is quite time-
 # consuming!  lol
+
+# NOTE: Re-write values as Class Objects for simplified code
+
 from time import sleep
 from system_commands import *
 from maths import *
