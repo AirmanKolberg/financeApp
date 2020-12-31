@@ -10,6 +10,7 @@ month_now = today.strftime("%m")
 day_now = today.strftime("%d")
 
 
+# NOTE: The following two functions can be combined/simplified
 def count_days_since_today(init_year, init_month, init_day):
     initial_date = date(int(init_year), int(init_month), int(init_day))
     present_date = date(int(year_now), int(month_now), int(day_now))
