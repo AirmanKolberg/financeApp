@@ -9,7 +9,7 @@ import xlsxwriter
 import math
 from secrets import IEX_CLOUD_API_TOKEN
 
-stocks = pd.read_csv('sp_500_stocks.csv')
+stocks = pd.read_csv('my_stocks.csv')
 
 symbol = 'AAPL'
 api_url = f'https://sandbox.iexapis.com/stable/stock/{symbol}/quote/?token={IEX_CLOUD_API_TOKEN}'
