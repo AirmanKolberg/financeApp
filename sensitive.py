@@ -12,6 +12,7 @@ current_date = today.strftime("%m/%d/%Y")
 
 # Set the following as variables in this comment's place
 
+# NOTE: These are not real, just for example
 liquid_assets = [checking_account, savings_account, crypto_portfolio, cash]
 short_term_liabilities = [goldmann_credit, trumps_border_wall,  cap1_black_card]
 long_term_liabilities = [auto_loan, mansion_loan]
