@@ -2,6 +2,9 @@
 # This in-dev version, whilst operable,
 # is just for testing purposes.
 
+# The assumed portfolio size in this app
+# is $6,000 from the start.
+
 import pandas as pd
 import requests
 import math
@@ -47,13 +50,6 @@ def check_prices(stock_or_all, price_or_shares2buy):
                 ignore_index=True)
 
     portfolio_size = 6000
-
-    # The following lines are unnecessary unless the user inputs portfolio_size
-    # try:
-    #     val = float(portfolio_size)
-    # except ValueError:
-    #     portfolio_size = input("That's not a number, please try again.\nEnter the value of your portfolio: ")
-    #     val = float(portfolio_size)
 
     position_size = float(portfolio_size) / len(final_dataframe.index)
     for i in range(0, len(final_dataframe['Ticker'])):
