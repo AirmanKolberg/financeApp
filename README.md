@@ -25,3 +25,6 @@ I am now working on some compounding interest formulae for the app's mainframe, 
 
 # Update, 3Dec2020
 It's been a while since I've worked on this app, but I've decided that, alongside practicing pen testing, this app will be my primary focus.  I've made the main menu into a function, rather than having it clutter up the main.py file.  More to come in the near-future!
+
+# Update, 31Dec2020
+Happy New Year, all!  I've been taking some time working on a stock trading app, which I am now slowly integrating into the Financial Framework.  More updates to come, but you'll have to wait until next year!  😉
