@@ -2,10 +2,8 @@ from system_commands import bash_command, clear_screen
 from maths import count_days_since_today
 from bugger_file import my_data
 
-# Change of plans; I may be scrapping this portion of the
-# mainframe for the time being.  Later, I will go back
-# and create a more integrated, more reasonable approach
-# to a "Budget Bug"-type of app, I suppose.
+# This will not be updated until further notice
+# May discontinue and replace
 
 clear_screen()
 days_since_start = count_days_since_today(my_data[0], my_data[1], my_data[2])
