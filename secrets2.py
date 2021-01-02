@@ -7,8 +7,6 @@ import pyautogui
 from time import sleep
 
 start_date = [2021, 1, 8]
-spendable = 1000
-saved_for_car = 30000
 
 bank_one_user = 'secret'
 bank_one_pass = 'secret'
@@ -32,6 +30,8 @@ class Account:
 
 bank_one = Account('USAA', 354.37)
 bank_two = Account('BoA', 0)
+daily_budget = Account('Budget', 1415.22)
+car_savings - Account('Car Savings', 15850)
 
 
 # Conformed to the 2015 15" MacBook Pro Retina display
