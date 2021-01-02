@@ -31,7 +31,7 @@ class Account:
 bank_one = Account('USAA', 354.37)
 bank_two = Account('BoA', 0)
 daily_budget = Account('Budget', 1415.22)
-car_savings - Account('Car Savings', 15850)
+car_savings = Account('Car Savings', 15850)
 
 
 # Conformed to the 2015 15" MacBook Pro Retina display
