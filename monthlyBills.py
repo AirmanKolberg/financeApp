@@ -20,7 +20,7 @@ def create_monthly_bills_list():
     while not done_adding_bills:
         bill_name = input('Insert bill name: ')
         bill_amount = verify_float(input('Insert bill amount: '))
-        bills_dictionary[bill_name]=bill_amount
+        bills_dictionary[bill_name] = bill_amount
 
         adding_another = verify_yes_or_no(input('Add another?\n').lower())
         if not adding_another:
