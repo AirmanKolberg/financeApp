@@ -1,11 +1,6 @@
 # financeApp
 For years I've been looking for the perfect finance app that doesn't exist, and now I believe I can create it.  From Daily Budget, to Mint, to dozens of others, I could never find an app that shows my daily budget, but also keeps my portfolio, balance sheet, and considers our net worth in assembling our budget.  Well, I've put myself to the test to start designing this app.  I will be updating it here on GitHub periodically, but I imagine that I will continue to work on it daily.  Since this app requires that I do a lot of personal things (ie log into my bank account for me to grab information, such as account balances), I will be keeping all sensitive material and functions in "sensitive.py".  I will then go back, revise the sensitive sections, and add comments to help bridge the gaps for when I post the updates.
 
-If, for any reason, you would like to donate- though unneccesary, is always apreciated!
-
-BitCoin: 3Gj49JGVPXjw3994bSebQNrHsFJkZE9iRg && 
-Etherium: 0x08b57537943BBb6A527C9c861E9550D9Be9f7729
-
 Thank you all for reading!
 
 # Update
@@ -28,3 +23,32 @@ It's been a while since I've worked on this app, but I've decided that, alongsid
 
 # Update, 31Dec2020
 Happy New Year, all!  I've been taking some time working on a stock trading app, which I am now slowly integrating into the Financial Framework.  More updates to come, but you'll have to wait until next year!  😉
+
+---
+
+### Donations!
+Consider donating, though of course not necessary!  :)
+
+Cardano (ADA):
+addr1q9jxsfd87g4f9rcl7x43lwxnkmklek279yw0fhwrsm3pjjal23me7f9yesnhs2fhpf05xd0deta3csgn4z433rze7yjsav8ejn
+
+
+BitCoin (BTC): 
+33XbUGgEGx3oQ8wZEsdWBtZ6jncTPWoNtq
+
+
+Etherium (ETH): 
+0x68D8928631f697820cf2bd9B275e5b39D6Cba020
+
+
+Dogecoin (DOGE):
+DNJoCDAwwVcpRMH3wCeeCwRMpzUHW6uvbH
+
+
+Ripple (XRP):
+rahunjARy7sb2AEc75xdzqSRuMeUPqXxF2
+
+
+VeChain (VET):
+0xeD36284Fb479F15620f5c8Af0996A723c6b5dc43
+
